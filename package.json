@@ -1,0 +1,38 @@
+{
+  "name": "@surglogs/PACKAGE_NAME",
+  "version": "1.0.0",
+  "description": "PACKAGE_DESCRIPTION",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest ./src",
+    "build": "rm -rf ./lib && ./node_modules/.bin/babel -e 0 ./src -d ./lib",
+    "prepare": "npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surglogs/PACKAGE_NAME"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surglogs/PACKAGE_NAME/issues"
+  },
+  "homepage": "https://github.com/surglogs/PACKAGE_NAME#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@types/jest": "^24.0.15",
+    "@types/sinon": "^7.0.13",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sinon": "^7.3.2"
+  },
+  "peerDependencies": {},
+  "dependencies": {}
+}
